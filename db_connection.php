@@ -1,9 +1,9 @@
 <?php
     function OpenCon() {
-        $hostname = "127.0.0.1";
-        $username = "user";
-        $password = "drakinho1";
-        $db = "notification";
+        $hostname = "e11wl4mksauxgu1w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+        $username = "ff19744gqchk0ibi";
+        $password = "gfx8u9myq8gny12c";
+        $db = "qx4l5y21dx6r6ji5";
         $conn = new mysqli($hostname, $username, $password,$db) or die("Connect failed: %s\n". mysqli_connect_error());
         
         return $conn;
