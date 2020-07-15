@@ -14,8 +14,12 @@ html, body {
     height: 100%;
 }
 
-.park_logo{
-    margin-top:-100px;
+#park_logo{
+    position: absolute;
+    width: 276px;
+    height: 53px;
+    left: 140px;
+    top: 58px;
 }
 
 body{
