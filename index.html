@@ -14,11 +14,11 @@
         <title>PACKWITHME</title>
     </head>
     <body>
-        <div>
-        <img class="park_logo ml-5" src= "images/parklogo.png">
-        <span class="pwm ml-3"><strong>PACKWITHME</strong></span> 
+        <div id= "head_logo">
+            <img class="park_logo ml-5" src= "images/parklogo.png">
+            <span class="pwm ml-3"><strong>PACKWITHME</strong></span> 
         </div>
-        <div class="container-fluid park_header ">
+        <div class="container-fluid park_header">
             <div class="row">
                 <div class="col-lg-7 col-md-7 col-sm-12 order-lg-4 order-md-5 order-2 ml-5 sub_head">
                     <span class="intro"><p><strong>Introducing a new way of packing</strong></p></span>
@@ -31,9 +31,10 @@
                     </form>  
                 </div>
 
-                <div class="col-lg-3 col-md-5 col-sm-12 order-lg-7 order-md-7 order-1  ml-5 mb-5">
-                    <p>Launching in....</p><br><br>
-                    <img src="./images/tiltphone.png" alt="">
+                <div class="col-lg-3 col-md-5 col-sm-12 order-lg-7 order-md-7 order-1  ">
+                    <h1 class="launching">Launching in....</h1><br><br>
+                    <div class="countdown"></div>
+                    <img class="shake-br" id="tiltphone" src="./images/tiltphone.png" alt="">
 
                 </div>
             </div>
@@ -87,6 +88,7 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="main.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
