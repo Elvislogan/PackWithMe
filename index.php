@@ -1,12 +1,16 @@
 <?php
   include 'db_connection.php';
   $conn = OpenCon();
-  if (isset($_POST['email'])) {
-    $email = $_POST['email'];
-    echo $email;
-  }
+  $emails = $_POST['user_emails'];
+  
+  $sql = "INSERT INTO usersemail (email) VALUES ('$emails')";
 
-    
-  echo "Connected Successfully";
+  if (!mysqli_query($conn, $sql)) {
+    echo "Not Inserted";
+  } else {
+    echo "Thank you for subscribing. You will be notified soon";
+  }
+ 
+  header("refresh:2; url=index.html");
   CloseCon($conn);
 ?>
