@@ -6,10 +6,15 @@
 *{
     box-sizing: border-box;
 }
+
+
 html, body {
     margin: 0;
+    overflow-x: hidden;
     height: 100%;
 }
+
+
 
 body{
     margin: 0;
@@ -18,13 +23,9 @@ body{
     background: var(--background_color_one);
    
 }
-.wrapper{
-    width:100%;
-    max-width:1440;
-    margin: 0px;
-}
+
 .park_header{
-    background: var(--background_color_one);
+    
     width: 100%;    
 }
 
@@ -86,7 +87,7 @@ body{
     background: var(--background_color_two);
     margin-top: 100px;
     width: 100%;
-   
+   margin-right: left;
     padding: 0 auto;
     
     
@@ -254,4 +255,58 @@ body{
     }
   }
   
+@media (max-width:650px) {
+    #head_logo {
+        width: 70%; 
+        margin-bottom: 20px;    
+    }
+
+    .launching {
+        font-size: 25px;
+        padding-bottom: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+
+    .countdown {
+        font-size: 30px;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .countdown div {
+        
+        
+        color: red; 
+         
+    } 
+
+    .countdown span{
+        color: black;
+    }
+
+    .sub_head {
+        margin-top: -70px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:990px) {
+    .sub_head {
+        margin-top: -30px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
 
