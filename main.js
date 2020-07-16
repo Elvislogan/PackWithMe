@@ -19,9 +19,9 @@ const interval = setInterval(() => {
 
     // Display result
     countdown.innerHTML = `
-        <div>${days}:<span>Days</span></div>
-        <div>${hours}:<span>Hours</span></div>
-        <div>${mins}:<span>Minutes</span></div>
+        <div>${days}<span>Days</span></div>
+        <div>${hours}<span>Hours</span></div>
+        <div>${mins}<span>Minutes</span></div>
         <div>${seconds}<span>Seconds</span></div>
     `; 
 
@@ -34,3 +34,4 @@ const interval = setInterval(() => {
         countdown.innerHTML = 'Launched!';
     }
 }, 1000);
+

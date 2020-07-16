@@ -26,10 +26,13 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Muli','Arial', Helvetica, sans-serif;
-    background: var(--background_color_one);
+    background: var(--background_color_two);
    
 }
 
+.wrapper {
+    background: var(--background_color_one);
+}
 .park_header{
     
     width: 100%;    
@@ -99,6 +102,63 @@ body{
     
 }
 
+.section3{
+    background: var(--background_color_two);
+    margin-top: 30px !important;
+    width: 100%;
+   margin-right: left;
+    padding: 0 auto;
+    margin-bottom: 100px;
+    
+    
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section4{
+
+    margin-top: 30px !important;
+    width: 100%;
+    margin-right: left;
+    padding: 0 auto; 
+    position: relative;
+    text-align: center;
+    color: white; 
+    height: 174px; 
+    background: rgba(85, 130, 139, 0.8);      
+}
+
+.countdown .overimage{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.soon_launch{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 55px;
+    
+    color: #000000;
+    margin-bottom: -400px;
+}
+
+.sub {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    
+    color: #000000;
+}
+
 .countdown {
     font-size: 50px;
     display: flex;
@@ -106,17 +166,22 @@ body{
     align-items: center;
     text-align: center;
     margin-top: -70px;
-    margin-left: 100px;
-    
+    margin-left: 100px; 
+}
+
+.countdown div:first-child{
+    background: #87BBA2;
 }
 
 .countdown div {
-    
     font-weight: bold;
     font-size: 28px;
     line-height: 35px;
     padding: 20px; 
-    margin: 2px;
+    margin: 5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    opacity:0.7;
     color: #FFFFFF;   
 }
 
@@ -137,7 +202,8 @@ body{
     font-size: 28px;
     line-height: 35px;
     color: #FFFFFF;
-    margin-left: 100px;
+    margin-left: 70px;
+    margin-bottom: 30px;
 }
 
 #tiltphone{
@@ -145,17 +211,18 @@ body{
     margin-left:-20px;
 }
 
-.pwm{    
-    font-size: 30px;
-    color: var(--background_color_two);
-    
-}
+
 
 .sub_head{
-    margin-top:250px;
+    margin-top:150px;
+    margin-left:100px;
   
 }
 
+.details {
+    padding: 50px;
+    margin:50px;
+}
 
 .intro{
     color: var(--background_color_two);
@@ -171,6 +238,17 @@ body{
     line-height: 45px;    
 }
 
+.main-carousel {
+   margin-bottom: 200px;
+   
+}
+  
+.carousel-cell {
+width: 35%;
+margin-right: 5px;
+}
+
+
 .title {
     font-weight: 600;
     font-size: 24px;
@@ -183,8 +261,34 @@ body{
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
+    padding-bottom: 10px;
    
     color: #000000;
+}
+
+.section2{
+    background: var(--background_color_two) !important;
+    width: 100%;
+    padding: 0 auto;
+   }
+
+#screenshots {
+    text-align:center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 55px;    
+    color: #000000;
+}
+
+.more_screens {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+    
 }
 
 
@@ -268,13 +372,10 @@ body{
     }
 
     .launching {
-        font-size: 25px;
-        padding-bottom: 20px;
+        font-size: 40px;
+        padding-top: 30px;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        margin-right:
 
     }
 
@@ -287,32 +388,115 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
+        flex-direction: column;
     }
 
     .countdown div {
-        
-        
-        color: red; 
-         
+        display:none;
     } 
 
-    .countdown span{
-        color: black;
+    .countdown div:first-child{
+        display:block;
+        width: 80%;
+        padding: 10px;
+        margin-top:150px;
+        margin-right:100px;
     }
 
+   
+}
+
+@media (max-width:776px) {
     .sub_head {
-        margin-top: -70px;
-        margin-bottom: 40px;
+       margin-left: -0px;
+       margin-top:-100px;
+       margin-bottom: 50px;
+    }
+
+    .launching {
+        font-size: 40px;
+        padding-top: 30px;
+        text-align: center;
+
+    }
+
+    .countdown {
+        font-size: 30px;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-right: 70px;
+        
     }
 }
 
-@media (max-width:990px) {
+
+@media (max-width:770px) {
     .sub_head {
-        margin-top: -30px;
-        margin-bottom: 40px;
+       margin-left: -0px;
+       margin-top:-100px;
+       margin-bottom: 50px;
+    }
+
+    .launching {
+        font-size: 40px;
+        padding-top: 30px;
+        text-align: center;
+
+    }
+
+    .countdown {
+        font-size: 30px;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-right: 70px;
+        
     }
 }
 
+@media (max-width:770px) {
+    #travel_icon {
+        display: none;
+    }
+}
 
+@media (max-width:1120px) {
+    .carousel-cell{
+        width: 50% !important;
+    }
+}
 
+@media (max-width:840px) {
+    .carousel-cell{
+        width: 70% !important;
+    }
+}
 
+@media (max-width:600px) {
+    .carousel-cell{
+        width: 90% !important;
+    }
+}
+
+@media (max-width:474px) {
+    .carousel-cell{
+        width: 100% !important;
+    }
+}
+
+@media (max-width:650px) {
+    #park_logo {
+        width: 70%;
+    }
+
+    .launching{
+        font
+    }
+}
