@@ -127,15 +127,10 @@ body{
     width: 100%;
     margin-right: left;
     padding: 0 auto; 
-    position: relative;
+    
     text-align: center;
     color: white; 
-    height: 174px; 
     background: rgba(85, 130, 139, 0.8);      
-}
-
-.countdown .overimage{
-    
 }
 
 .soon_launch{
