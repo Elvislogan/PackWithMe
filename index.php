@@ -3,7 +3,7 @@
   $conn = OpenCon();
   $emails = $_POST['user_emails'];
   
-  $sql = "INSERT INTO `email` (`email`) VALUES ('$emails')";
+  $sql = "INSERT INTO `notify` (`email`) VALUES ('$emails')";
 
   if (!mysqli_query($conn, $sql)) {
     echo "Not Inserted";
