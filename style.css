@@ -385,11 +385,12 @@ margin-right: 5px;
         flex-direction: column;
     }
 
-    .countdown div {
+   /*  .countdown div {
         display:none;
-    } 
+    }  */
 
-    .countdown div:first-child{
+    /* .countdown div:first-child */
+    .countdown div{
         display:block;
         width: 80%;
         padding: 10px;
