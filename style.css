@@ -400,6 +400,13 @@ margin-right: 5px;
         margin-right:2px;
         
     } 
+
+    .details {
+        display: block;
+        padding: 2px;
+        margin-right: 150px;
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width:765px) {
@@ -508,9 +515,9 @@ margin-right: 5px;
     }
     .details {
         display: block;
-        padding: 40px;
-        margin-right: -100px;
-        margin-bottom: 50px;
+        padding: 5px;
+        margin-left: 200px;
+        margin-bottom: 40px;
     }
 
     #straight_phone{
