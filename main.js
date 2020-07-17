@@ -46,7 +46,8 @@ $('#notify').click(function(e) {
         data: {'email':email.val()},
         success: (message) => {
             // add an action to be carried out when submission is successful
-            $("#feedback").text(message)
+            //$("#feedback").text(message)
+            swal("Good job!", "Thank you for subscribing! We will get in touch with you soon", "success");
         },
         // add an action to be carried out when submission is successful
         error: (error) => {
@@ -67,7 +68,8 @@ $('#early_access').click(function(e) {
         data: {'email':email.val()},
         success: (message) => {
             // add an action to be carried out when submission is successful
-            $("#reply").text('Thank you for subscribing')
+            //$("#reply").text('Thank you for subscribing')
+            swal("Good job!", "Thank you for subscribing! We will get in touch with you soon", "success");
         },
         // add an action to be carried out when submission is successful
         error: (error) => {
