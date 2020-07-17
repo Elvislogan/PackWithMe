@@ -84,6 +84,9 @@ body{
     padding-left:20px;
 }
 
+#launch_soon{
+    margin-top:90px;
+}
 .notify{
     outline:none !important;
     width: 154px;
@@ -403,6 +406,8 @@ margin-right: 5px;
     #launch_soon{
         margin-left:50px;
         margin-right: 50px;
+        margin-bottom: 50px;
+        margin-top:-50px;
     }
 
     .soon_launch{
