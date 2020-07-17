@@ -405,7 +405,28 @@ margin-right: 5px;
         display: block;
         padding: 2px;
         margin-right: 150px;
-        margin-bottom: 40px;
+        
+    }
+
+    .icons{
+        padding:10px;
+        margin-right: 150px;
+        padding-bottom: 30px;
+        margin-left: 50px;
+    }
+
+    .title{
+        padding:30px;
+        font-size:30px;
+        margin-left: -50px;
+        padding-bottom: 30px;
+    }
+
+    .sub_title{
+        padding:30px;
+        font-size:20px;
+        margin-right: 200px;
+        
     }
 }
 
