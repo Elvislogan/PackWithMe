@@ -75,7 +75,7 @@ body{
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    color: #BDBDBD; 
+    color: #000000; 
     outline:none; 
    
 }
@@ -135,11 +135,6 @@ body{
     transform: translate(-50%, -50%);
 }
 
-
-
-#social{
-    margin: 30px;
-}
 
 .soon_launch{
     font-style: normal;
