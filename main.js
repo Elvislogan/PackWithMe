@@ -36,26 +36,46 @@ const interval = setInterval(() => {
 }, 1000);
 
 
-    $('#notify').click(function(e) {
-       var email =$("#email");
-      //prevent default form submission
-     
-        
-     //ajax form submission
-        $.ajax({
-            type: 'POST',
-            url: 'index.php',
-            data: {'email':email.val()},
-            success: (message) => {
-             // add an action to be carried out when submission is successful
-              $("#feedback").text(message)
-            },
+$('#notify').click(function(e) {
+    var email =$("#email");
+
+    //ajax form submission
+    $.ajax({
+        type: 'POST',
+        url: 'index.php',
+        data: {'email':email.val()},
+        success: (message) => {
             // add an action to be carried out when submission is successful
-            error: (error) => {
-              alert(`${error}`)
-            }
-        })
-    }); 
+            $("#feedback").text(message)
+        },
+        // add an action to be carried out when submission is successful
+        error: (error) => {
+            alert(`${error}`)
+        }
+    })
+}); 
+
+
+
+$('#early_access').click(function(e) {
+    var email =$("#address");
+
+    //ajax form submission
+    $.ajax({
+        type: 'POST',
+        url: 'index.php',
+        data: {'email':email.val()},
+        success: (message) => {
+            // add an action to be carried out when submission is successful
+            $("#reply").text('Thank you for subscribing')
+        },
+        // add an action to be carried out when submission is successful
+        error: (error) => {
+            alert(`${error}`)
+        }
+    })
+}); 
+
 
 
 

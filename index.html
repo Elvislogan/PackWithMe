@@ -23,8 +23,8 @@
                         <span class="packapp_scan"><p>Create your packing list and let our app scan your luggage and see what you missed.<br><strong>Stay tuned for our launch</strong></p></span>
 
                     
-                        <input type="text" id="email" placeholder="Enter email address" required>
-                        <button  class="" id="notify">Get Notified</button>
+                        <input type="text" id="email" class="email" placeholder="Enter email address" required pattern=".+@beststartupever.com">
+                        <button  class="notify" id="notify">Get Notified</button>
                         
                         <p id="feedback bg-warning"></p>
                     </div>
@@ -96,26 +96,20 @@
                 
                 <div class="main-carousel"
                 data-flickity='{ "wrapAround": true }'>
-                    <div class="carousel-cell"><img src="./images/Group 221.svg" style="width:600px;height:600px;"></div>
-                    <div class="carousel-cell"><img src="./images/Group 232.svg" style="width:600px;height:600px;"></div>
-                    <div class="carousel-cell"><img src="./images/iPhone 11 Pro3.svg" style="width:600px;height:600px;"></div>
-                    <div class="carousel-cell"><img src="./images/Group 124.svg" style="width:600px;height:600px;"></div>
-                    <div class="carousel-cell"><img src="./images/Group 135.svg" style="width:600px;height:600px;"></div>
-                    <div class="carousel-cell"><img src="./images/iPhone 11 Pro6.svg" style="width:600px;height:600px;"></div>
+                    <div class="carousel-cell"><img class="myImage" src="./images/Group 221.svg" style="width:600px;height:600px;"></div>
+                                            <!-- change the image src -->
+                                            <img class="my_image" src="./images/Group 221.svg">
+                    <div class="carousel-cell"><img class="myImage" src="./images/Group 232.svg" style="width:600px;height:600px;"></div>
+                                            <img class="my_image" src="./images/Group 232.svg">
+                    <div class="carousel-cell"><img class="myImage" src="./images/iPhone 11 Pro3.svg" style="width:600px;height:600px;"></div>
+                                            <img class="my_image" src="./images/iPhone 11 Pro3.svg">
+                    <div class="carousel-cell"><img class="myImage" src="./images/Group 124.svg" style="width:600px;height:600px;"></div>
+                                            <img class="my_image" src="./images/Group 124.svg">
+                    <div class="carousel-cell"><img class="myImage" src="./images/Group 135.svg" style="width:600px;height:600px;"></div>
+                                            <img class="my_image" src="./images/Group 135.svg">
+                    <div class="carousel-cell"><img class="myImage" src="./images/iPhone 11 Pro6.svg" style="width:600px;height:600px;"></div>
+                                            <img class="my_image" src="./images/iPhone 11 Pro6.svg">
                 </div>
-            </div>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- The Close Button -->
-                <span class="close">&times;</span>
-            
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img01">
-            
-                <!-- Modal Caption (Image Text) -->
-                <div id="caption"></div>
             </div>
         </section>
 
@@ -130,27 +124,14 @@
                         <div class="countdown"></div>
                         <span class="soon_launch"><p><strong>We will Launch Soon</strong></p></span>
                         <p class = "sub">Subscribe to get notification as soon as we launch. Don't be left out.</p>
-                        <p id="feedback"></p>
-                        <input type="email" id="e" placeholder="Enter email address" required>
-                        <button type="submit" id="notify">Get Notified</button>
-                        
-                        
+                        <p id="reply"></p>
+                        <input type="email" id="address" class="email" placeholder="Enter email address" required>
+                        <button type="submit" class="notify" id="early_access">Get Notified</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container-fluid section4">
-                <div class="row">
-                    <div class = "col-12">
-                        <img id="pack_log" src= "./images/Group 14.svg">
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        
         
 
         <!-- Optional JavaScript -->
