@@ -382,6 +382,8 @@ margin-right: 5px;
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-left: -1px;
+        padding:5px;
        
     }
 
@@ -396,6 +398,7 @@ margin-right: 5px;
         padding: 10px;
         margin-top:50px;
         margin-right:2px;
+        
     } 
 }
 
@@ -449,7 +452,7 @@ margin-right: 5px;
         display: block;
         margin-top:-100px;
         margin-bottom: 50px;
-        
+        padding:50px;
         margin-left:-0px;
     
     }
