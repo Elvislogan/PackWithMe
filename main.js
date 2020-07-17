@@ -21,8 +21,8 @@ const interval = setInterval(() => {
     countdown.innerHTML = `
         <div>${days}<span>Days</span></div>
         <div>${hours}<span>Hours</span></div>
-        <div>${mins}<span>Minutes</span></div>
-        <div>${seconds}<span>Seconds</span></div>
+        <div>${mins}<span>Mins</span></div>
+        <div>${seconds}<span>Sec</span></div>
     `; 
 
     //If launch date passed
@@ -34,4 +34,43 @@ const interval = setInterval(() => {
         countdown.innerHTML = 'Launched!';
     }
 }, 1000);
+
+
+    $('#notify').click(function(e) {
+       var email =$("#email");
+      //prevent default form submission
+     
+        
+     //ajax form submission
+        $.ajax({
+            type: 'POST',
+            url: 'index.php',
+            data: {'email':email.val()},
+            success: (message) => {
+             // add an action to be carried out when submission is successful
+              $("#feedback").text(message)
+            },
+            // add an action to be carried out when submission is successful
+            error: (error) => {
+              alert(`${error}`)
+            }
+        })
+    }); 
+
+
+
+
+
+
+$(document).ready(function(){
+    $('.myImage').on('click', function(){
+        $('.my_image').toggleClass('wide')
+    });
+});
+
+$(document).ready(function(){
+    $('.my_image').on('click', function(){
+        $('.my_image').removeClass('wide')
+    });
+});
 

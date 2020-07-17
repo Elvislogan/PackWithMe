@@ -34,8 +34,8 @@ body{
 .wrapper {
     background: var(--background_color_one);
 }
-.park_header{
-    
+
+#park_header{   
     width: 100%;    
 }
 
@@ -67,12 +67,17 @@ body{
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    color: #BDBDBD;  
+    color: #BDBDBD; 
+    outline:none; 
    
 }
 
+::placeholder {
+    padding-left:20px;
+}
+
 #notify{
-   
+    outline:none;
     width: 154px;
     height: 52px;
     background: #87BBA2;
@@ -164,7 +169,7 @@ body{
 }
 
 .countdown div:first-child{
-    background: #87BBA2;
+    
 }
 
 .countdown div {
@@ -182,13 +187,14 @@ body{
 
 .countdown span{
     display:block;
-    width: 34px;
+    width: 55px;
     height: 18px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 25px;
     line-height: 18px;
     color: #FFFFFF;
 }
+
 .launching{
     width: 188px;
     height: 35px;
@@ -210,11 +216,10 @@ body{
 .sub_head{
     margin-top:150px;
     margin-left:100px;
-  
 }
 
 .details {
-    padding: 50px;
+    padding: 10px;
     margin:50px;
 }
 
@@ -364,26 +369,11 @@ margin-right: 5px;
               transform: rotate(2deg);
     }
 }
-  
+
 @media (max-width:650px) {
-    #pack_logo{
-        display: block;
-        padding: 20px;
-        margin:0 auto auto ;
-       
-        
+    #park_logo {
+        width: 70%;
     }
-
-    .launching {
-        font-size: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        display: block;
-        padding: -50px; 
-    }
-
-
 
     .countdown {
         font-size: 30px;
@@ -405,12 +395,8 @@ margin-right: 5px;
         padding: 10px;
         margin-top:50px;
         margin-right:100px;
-    }
-
-   
+    } 
 }
-
-
 
 @media (max-width:765px) {
     #travel_icon {
@@ -429,6 +415,12 @@ margin-right: 5px;
     .sub{
         padding-right: 50px;
     }
+
+    .intro{
+        padding: -20px;
+    }
+
+
 }
 
 @media (max-width:1120px) {
@@ -449,32 +441,69 @@ margin-right: 5px;
     }
 }
 
+@media (max-width:768px) {
+    .sub_head{
+        display: block;
+        margin-top:-100px;
+        margin-bottom: 50px;
+        
+        margin-left:-0px;
+    
+    }
+}
+
 @media (max-width:600px) {
     .carousel-cell{
         width: 100% !important;
     }
 }
 
-@media (max-width:650px) {
-    #park_logo {
-        width: 70%;
-    }
-
-    .launching{
-        font
-    }
-}
-
 @media (max-width:990px) {
-    .sub_head{
-        margin-bottom: 100px;
-
-    }
-
-    .details {
+    #pack_logo{
         display: block;
         padding: 20px;
-        margin:0 auto auto ;
+        margin:0 auto auto ;    
+    }
+
+    #launch_tilt{
+        display: block;
+        padding: 20px;
+        margin:0 auto auto ; 
+    }
+
+    .launching {
+        display: block;
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: auto;   
+        padding: -50px;   
+    }
+
+    .sub_head{
+        display: block;
+        margin-top:-100px;
+        margin-bottom: 50px;
+       
+       
+      
+    }
+
+    .intro{
+        font-size: 40px;
+        
+    }
+
+    .lugg_scan {
+        font-size: 40px;
+    }
+
+    .packapp_scan{
+        font-size:25px;
+    }
+    .details {
+        display: block;
+        padding: 40px;
+        margin-right: -100px;
         margin-bottom: 50px;
     }
 
@@ -484,4 +513,27 @@ margin-right: 5px;
         padding: 20px;
         margin:0 auto auto ;
     }
+}
+
+
+.my_image {
+    cursor: pointer;
+    transition: 0.3s;
+    height: 600px; 
+}
+
+.my_image{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: lightpink;
+    padding: 60px;
+    width:100%;
+    height: 100%;
+    z-index: 50;
+    display: none;
+}
+
+.my_image.wide {
+    display: block;
 }

@@ -1,7 +1,9 @@
 <?php
   include 'db_connection.php';
   $conn = OpenCon();
-  $emails = $_POST['user_emails'];
+
+
+  $emails = $_POST['email'];
   
   $sql = "INSERT INTO `notify` (`email`) VALUES ('$emails')";
 
@@ -11,6 +13,6 @@
     echo "Thank you for subscribing. You will be notified soon";
   }
  
-  header("refresh:2; url=index.html");
+  
   CloseCon($conn);
 ?>
