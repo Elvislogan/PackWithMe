@@ -58,9 +58,9 @@ $('#notify').click(function(e) {
 
 
 
-$('#early_access').click(function(e) {
+$('form').submit(function(e) {
     var email =$("#address");
-
+    e.preventDefault();
     //ajax form submission
     $.ajax({
         type: 'POST',
@@ -95,4 +95,6 @@ $(document).ready(function(){
         $('.my_image').removeClass('wide')
     });
 });
+
+$("[type='email']").prop("required", true);
 

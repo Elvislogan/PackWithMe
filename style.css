@@ -539,3 +539,9 @@ margin-right: 5px;
 .my_image.wide {
     display: block;
 }
+
+.vibrate-1 {
+	-webkit-animation: vibrate-1 1s linear NaNs infinite both;
+	        animation: vibrate-1 1s linear NaNs infinite both;
+}
+
