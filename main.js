@@ -36,9 +36,9 @@ const interval = setInterval(() => {
 }, 1000);
 
 
-$('#notify').click(function(e) {
+$('form').submit(function(e) {
     var email =$("#email");
-
+    e.preventDefault();
     //ajax form submission
     $.ajax({
         type: 'POST',
